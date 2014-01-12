@@ -1,11 +1,13 @@
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+
 $(window).ready(function(){
 	htm_init();
 });
 
 function htm_init(){
-
 	main_menu();
-
 }
 
 function main_menu(){
