@@ -1,0 +1,21 @@
+@font-face {
+  font-family: overpass;
+  src: url('../fonts/overpass.ttf');
+}
+
+@font-face {
+  font-family: overpass_bold;
+  src: url('../fonts/overpass_bold.ttf');
+}
+
+.main-logo {
+	font-family: overpass_bold;
+	color: red;
+}
+
+body {
+	background-color: #3E91AF !important;
+}
+
+.mail_to {
+}

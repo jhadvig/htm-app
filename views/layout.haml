@@ -1,0 +1,37 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title HtmTrade
+    %link{href: "/css/main.css", rel: "stylesheet"}
+    %link{href: "/css/bootstrap.css", rel: "stylesheet"}
+    %link{href: "/css/justified-nav.css", rel: "stylesheet"}
+    %script{src:"/js/jquery.js"}
+    %script{src:"/js/bootstrap.min.js"}
+    %script{src:"/js/main.js"}
+  %body.pipise
+    .container
+      .masthead
+        %h3.text-muted.main-logo
+          %img.logo{src: "/images/htm-logo.png"}
+        %ul.nav.nav-justified.main-menu
+          %li.main
+            %a{href: "/"} Úvod
+          %li.service
+            %a{href: "/service"} Služby
+          %li.projects
+            %a{href: "/projects"} Projekty
+          %li.service
+            %a{href: "/service"} Servis
+          %li.about
+            %a{href: "/about"} O nás
+          %li.contact
+            %a{href: "/contact"} Kontakt
+      / Jumbotron
+      = yield
+
+
+      / Site footer
+      .footer
+        %p © HTM trade 2003
