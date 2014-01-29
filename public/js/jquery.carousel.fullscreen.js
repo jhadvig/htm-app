@@ -49,4 +49,8 @@ jQuery(document).ready(function() {
       $(".progressbar").css("width", counter + "%");
    }, 20);
 
+  $("#MyModal").modal();
+  $("#MyModal2").modal();
+  $("#MyModal3").modal();
+
 });

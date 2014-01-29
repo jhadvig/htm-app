@@ -5,6 +5,7 @@
 
 .navbar.navbar-default.navbar-fixed-top {
 
+  z-index: 100 !important;
   margin-top: 50px;
   min-height: 80px;
   height: 80px;
@@ -61,26 +62,20 @@
     }
   }
 
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  }
-
   blockquote {
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     &.first {
-      border-left: 5px solid #420000;
+      border-left: 4px solid #420000;
     }
 
     &.second {
-      border-left: 5px solid #c31c14;
+      border-left: 4px solid #c31c14;
     }
 
     &.third {
-      border-left: 5px solid #005c64;
+      border-left: 4px solid #005c64;
     }
 
     p {
@@ -102,7 +97,7 @@
 .footer {
   position:absolute;
   bottom: 0;
-  height: 18px;
+  height: 20px;
   width: 100%;
   z-index: 101;
   background-image: url('/images/nav-bar.png');
@@ -115,6 +110,50 @@
   }
 }
 
+.modal {
+  margin: 220px auto;
+  * {
+    z-index: 500;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
 
+  }
 
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+      border: 0px;
+      color: #000;
+      font-size: 16px;
+    }
 
+  }
+
+  &:focus {
+    outline: 0px !important;
+  }
+}
+
+.modal-backdrop.in {
+  opacity: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0));
+}
+
+hr.modal {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
+}
