@@ -4,13 +4,13 @@
 
 
 .navbar.navbar-default.navbar-fixed-top {
+  position: absolute;
 
   z-index: 100 !important;
   margin-top: 50px;
   min-height: 80px;
   height: 80px;
-  background-image: url('/images/nav-bar.png');
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.25);
   border: 0px;
 
   .navbar-brand {
@@ -22,13 +22,16 @@
     font-family: 'OFL Sorts Mill Goudy TT', serif;
     font-size: 17px;
 
-    a:hover {
-      color: #ffffff;
+    a {
+      color: #eee;
+      &:hover {
+        color: #c31c14;
+      }
     }
   }
 
   .active > a {
-    color: #ffffff;
+    color: #eee;
     background-color: transparent;
   }
 
@@ -39,8 +42,9 @@
   z-index: 100;
   width: 100%;
   top: 130px;
-  bottom: 0;
+  bottom: -1;
   background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 50px;
 
   .progressbar {
     width: 0%;
@@ -111,7 +115,7 @@
 }
 
 .modal {
-  margin: 220px auto;
+  margin: auto;
   * {
     z-index: 500;
     font-family: 'OFL Sorts Mill Goudy TT', serif;
