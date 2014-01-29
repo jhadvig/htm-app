@@ -24,8 +24,14 @@
 
     a {
       color: #eee;
-      &:hover {
+      &.red:hover {
         color: #c31c14;
+      }
+      &.blue:hover {
+        color: #06a2cb;
+      }
+      &.yellow:hover {
+        color: #ebb035;
       }
     }
   }
@@ -48,8 +54,17 @@
 
   .progressbar {
     width: 0%;
-    height: 2px;
-    background-color: #c31c14;
+    height: 3px;
+
+    &.red {
+      background-color: #c31c14;
+    }
+    &.blue {
+      background-color: #06a2cb;
+    }
+    &.yellow {
+      background-color: #ebb035;
+    }
   }
 
   .container.body *{

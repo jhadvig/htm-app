@@ -37,23 +37,17 @@ jQuery(document).ready(function() {
 	switch (path){
 		case '':
 			$('ul.nav.navbar-nav li.main').addClass("active");
-			console.log("1");
+			$('.progressbar').addClass("red");
 			break;
 		case 'service':
 			$('ul.nav.navbar-nav li.service').addClass("active");
-			console.log("2");
-			break;
-		case 'about':
-			$('ul.nav.navbar-nav li.about').addClass("active");
-			console.log("4");
+			$('.progressbar').addClass("blue");
 			break;
 		case 'contact':
 			$('ul.nav.navbar-nav li.contact').addClass("active");
-			console.log("5");
+			$('.progressbar').addClass("yellow");
 			break;
 	}
-
-
 
   $("#MyModal").modal();
   $("#MyModal2").modal();
