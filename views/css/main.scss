@@ -1,32 +1,120 @@
-@font-face {
-  font-family: overpass;
-  src: url('../fonts/overpass.ttf');
+#carousel-example-generic.carousel.slide {
+  z-index: 10;
 }
 
-@font-face {
-  font-family: overpass_bold;
-  src: url('../fonts/overpass_bold.ttf');
+
+.navbar.navbar-default.navbar-fixed-top {
+
+  margin-top: 50px;
+  min-height: 80px;
+  height: 80px;
+  background-image: url('/images/nav-bar.png');
+  background-color: transparent;
+  border: 0px;
+
+  .navbar-brand {
+    padding: 10px 10px;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
+    font-size: 17px;
+
+    a:hover {
+      color: #ffffff;
+    }
+  }
+
+  .active > a {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
 }
 
-.main-logo {
-	font-family: overpass_bold;
-	color: red;
-}
-
-body {
-	background-color: #3E91AF !important;
-}
-
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
+.content {
+  position: absolute;
+  z-index: 100;
   width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #3E91AF !important;
+  top: 130px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+
+  .progressbar {
+    width: 0%;
+    height: 2px;
+    background-color: #c31c14;
+  }
+
+  .container.body *{
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
+  }
+
+  .jumbotron {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .contact {
+    h4.text {
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  }
+
+  blockquote {
+    &.first {
+      border-left: 5px solid #420000;
+    }
+
+    &.second {
+      border-left: 5px solid #c31c14;
+    }
+
+    &.third {
+      border-left: 5px solid #005c64;
+    }
+
+    p {
+      font-size: 20px;
+    }
+    small {
+      font-size: 16px;
+      color: #333;
+    }
+  }
+  blockquote {
+    p {
+      font-size: 20px;
+    }
+  }
+
 }
 
-.nav-justified.main-menu a {
-	color: #005c64;
+.footer {
+  position:absolute;
+  bottom: 0;
+  height: 18px;
+  width: 100%;
+  z-index: 101;
+  background-image: url('/images/nav-bar.png');
+  font-family: 'OFL Sorts Mill Goudy TT', serif;
+  color: #ffffff;
+  font-size: 14px;
+  p {
+    margin: 0;
+
+  }
 }
+
+
+
+
