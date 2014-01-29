@@ -92,7 +92,7 @@
         .modal-content
           .modal-header
             %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
-            %h3#myModalLabel.modal-title Kontaktovať servis-desk
+            %h3#myModalLabel.modal-title Info-Desk
             %h3#myModalLabel.modal-title Matúš Kocka
           .modal-body
             %form{:role => "form"}
@@ -105,23 +105,7 @@
               %button.btn.btn-primary{:type => "submit"} Odoslať
               %button.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Zavrieť
 
-    #myModal3.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-      .modal-dialog
-        .modal-content
-          .modal-header
-            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
-            %h3#myModalLabel.modal-title Kontaktovať info linku
-            %h3#myModalLabel.modal-title Daniel Sečík
-          .modal-body
-            %form{:role => "form"}
-              .form-group
-                %input#senderEmail.form-control{:placeholder => "Váš @-mail", :type => "email"}
-              .form-group
-                %input#senderSubject.form-control{:placeholder => "Predmet", :type => "subject"}
-              .form-group
-                %textarea.form-control{:rows => "5"}
-              %button.btn.btn-primary{:type => "submit"} Odoslať
-              %button.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Zavrieť
+
 
     #footer
       .container

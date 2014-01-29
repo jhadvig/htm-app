@@ -2,56 +2,35 @@
 	%h1 Kontakt
 
 .row.contact
-	.col-lg-4
+	.col-lg-4.col-lg-offset-1
 		%center
-			%h2.position Konatel firmy
-			%h3.name Ing. Ivan Hadvig
-			%hr
-			%h4.text Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			%hr
-			%h4.phone Tel.: +421 0903 511 489
-			%h4.mail Mail.: htmtrade1@gmail.com
-			%p
-				/ %a.btn.btn-info.btn-lg.mail_to{href: "mailto:htmtrade1@gmail.com", role: "button"} Kontaktovať
-				%button.btn.btn-primary.btn-info.btn-lg{"data-target" => "#myModal", "data-toggle" => "modal"}
-					Kontaktovať
-				/ #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-				/ 	.modal-dialog
-				/ 		.modal-content
-				/ 			.modal-header
-				/ 				%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
-				/ 				%h4#myModalLabel.modal-title Modal title
-				/ 			.modal-body
-				/ 			.modal-footer
-				/ 				%a.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
-				/ 				%a.btn.btn-primary{:type => "button"} Save changes
+			.first
+				%h2.position Konatel firmy
+				%h3.name Ing. Ivan Hadvig
+				%hr
+				%h4.text Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				%hr
+				%h4.phone Tel.: +421 0903 511 489
+				%h4.mail Mail.: htmtrade1@gmail.com
+				%p
+					/ %a.btn.btn-info.btn-lg.mail_to{href: "mailto:htmtrade1@gmail.com", role: "button"} Kontaktovať
+					%button.btn.btn-primary.btn-info.btn-lg{"data-target" => "#myModal", "data-toggle" => "modal"}
+						Kontaktovať
 
 
-
-	.col-lg-4
+	.col-lg-4.col-lg-offset-2
 		%center
-			%h2.position Servis-Desk
-			%h3.name	Matúš Kocka
-			%hr
-			%h4.text Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			%hr
-			%h4.phone Tel.: +421 0902 000 111
-			%h4.mail Mail.: @gmail.com
-			%p
-				%button.btn.btn-primary.btn-info.btn-lg{"data-target" => "#myModal2", "data-toggle" => "modal"}
-					Kontaktovať
-	.col-lg-4
-		%center
-			%h2.position Info Linka
-			%h3.name	Daniel Sečík
-			%hr
-			%h4.text Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			%hr
-			%h4.phone Tel.: +421 0902 000 111
-			%h4.mail Mail.: @gmail.com
-			%p
-				%button.btn.btn-primary.btn-info.btn-lg{"data-target" => "#myModal3", "data-toggle" => "modal"}
-					Kontaktovať
+			.second
+				%h2.position Info-Desk
+				%h3.name
+				%hr
+				%h4.text Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				%hr
+				%h4.phone
+				%h4.mail Mail.: @gmail.com
+				%p
+					%button.btn.btn-primary.btn-info.btn-lg{"data-target" => "#myModal2", "data-toggle" => "modal"}
+						Kontaktovať
 
 .row.contact2
 	.col-lg-4
