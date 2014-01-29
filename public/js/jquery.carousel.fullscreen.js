@@ -3,6 +3,17 @@
 	@author Fabio Mangolini
      http://www.responsivewebmobile.com
 ******************************************************************************/
+$(window).load(function() {
+
+	var counter =0;
+
+  setInterval(function() {
+      counter = (counter + 0.35) % 100;
+      $(".progressbar").css("width", counter + "%");
+   }, 20);
+
+});
+
 jQuery(document).ready(function() {
 	$('.carousel').carousel({
     	pause: "false",
@@ -42,12 +53,7 @@ jQuery(document).ready(function() {
 			break;
 	}
 
-	var counter =0;
 
-  setInterval(function() {
-      counter = (counter + 0.35) % 100;
-      $(".progressbar").css("width", counter + "%");
-   }, 20);
 
   $("#MyModal").modal();
   $("#MyModal2").modal();
