@@ -117,6 +117,13 @@
     }
   }
 
+  .number,
+  .mail {
+    font-family: "Helvetica Neue" !important;
+  }
+  h4 div {
+    display: inline-block;
+  }
 }
 
 .footer {
@@ -191,4 +198,34 @@ hr.modal {
   position: fixed;
   bottom: 0;
   font-family: 'OFL Sorts Mill Goudy TT', serif;
+}
+
+.ipd {
+  .head {
+    blockquote {
+      font-family: 'OFL Sorts Mill Goudy TT', serif;
+      border-left: 4px solid #c31c14;
+    }
+  }
+  .body {
+    margin: 25px;
+    p.lead.first {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.air_technique {
+  .head {
+    blockquote {
+      font-family: 'OFL Sorts Mill Goudy TT', serif;
+      border-left: 4px solid #06a2cb;
+    }
+  }
+  .body {
+    margin: 25px;
+    p.lead.first {
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -103,6 +103,28 @@
               %button.btn.btn-primary{:type => "submit"} Odoslať
               %button.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Zavrieť
 
+    #airTechniqueModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+            %h3#myModalLabel.modal-title Informacie o našich službách v oblasti leteckej a letiskovej techniky
+            %h3#myModalLabel.modal-title
+          .modal-body
+            %form{:role => "form"}
+              .form-group
+                %input#senderCompanyName.form-control{:placeholder => "Váša spoločnosť", :type => "email", :name => "company-name"}
+              .form-group
+                %input#senderName.form-control{:placeholder => "Váše meno", :type => "name", :name => "name"}
+              .form-group
+                %input#senderEmail.form-control{:placeholder => "Váš @-mail", :type => "email", :name => "mail"}
+              .form-group
+                %input#senderPhone.form-control{:placeholder => "Telefón", :type => "subject", :name => "phone"}
+              .form-group
+                %textarea.form-control{:placeholder => "Text...", :rows => "5", :name => "description"}
+              %button.btn.btn-primary{:type => "submit"} Odoslať
+              %button.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Zavrieť
+
 
 
     #footer
