@@ -35,7 +35,20 @@ class Htm < Sinatra::Base
 
   post '/submit_mail_representative' do
     begin
-      send_mail params
+
+      Pony.mail(:to=>'j.hadvig@gmail.com',
+                :from => "#{params['mail']}",
+                :subject=> "test mail",
+                :body => "test body",
+                :via_options => {
+                  :address => 'smtp.gmail.com',
+                  :port => '587',
+                  :user_name => 'htm.openshift@gmail.com',
+                  :password => 'htm.trade',
+                  :authentication => :plain,
+                  :domain => 'gmail.com'
+                 })
+
     rescue => e
       puts "ERROR: Mail not sent, because of: #{e.message}"
     end
