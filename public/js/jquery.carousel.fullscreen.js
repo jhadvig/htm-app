@@ -10,6 +10,9 @@ $(window).load(function() {
   setInterval(function() {
       counter = (counter + 0.35) % 100;
       $(".progressbar").css("width", counter + "%");
+      if (counter > 99.6) {
+      	$('.carousel').carousel('next')
+      }
    }, 20);
 
 });
@@ -17,7 +20,7 @@ $(window).load(function() {
 jQuery(document).ready(function() {
 	$('.carousel').carousel({
     	pause: "false",
-    	interval: 6000
+    	interval: false
 	});
 
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()});

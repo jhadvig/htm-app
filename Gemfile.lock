@@ -12,7 +12,14 @@ GEM
       tilt
     json (1.8.1)
     libv8 (3.16.14.3)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
     method_source (0.8.2)
+    mime-types (1.25.1)
+    polyglot (0.3.3)
+    pony (1.5.1)
+      mail (>= 2.0)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -33,6 +40,9 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     tilt (1.4.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
 
 PLATFORMS
   ruby
@@ -41,6 +51,7 @@ DEPENDENCIES
   compass
   haml
   json
+  pony
   pry
   sass
   shotgun
