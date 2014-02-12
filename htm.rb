@@ -34,20 +34,14 @@ class Htm < Sinatra::Base
   end
 
   post '/submit_mail_representative' do
+    name =
     begin
-
-      Pony.mail(:to=>'j.hadvig@gmail.com',
-                :from => "#{params['mail']}",
-                :subject=> "test mail",
-                :body => "test body",
-                :via_options => {
-                  :address => 'smtp.gmail.com',
-                  :port => '587',
-                  :user_name => 'htm.openshift@gmail.com',
-                  :password => 'htm.trade',
-                  :authentication => :plain,
-                  :domain => 'gmail.com'
-                 })
+      RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
+      "@api.mailgun.net/v2/htmtrade.sk/messages",
+      :from => "#{params['mail'].match(/^[^@]*/i).to_s} <#{params['mail']}>",
+      :to => "j.hadvig@gmail.com",
+      :subject => "#{params['subject']}",
+      :text => "#{params['description']}"
 
     rescue => e
       puts "ERROR: Mail not sent, because of: #{e.message}"

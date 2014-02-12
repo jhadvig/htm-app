@@ -8,4 +8,4 @@ gem 'sass'
 gem 'compass'
 gem 'json'
 gem 'pry'
-gem 'pony'
+gem "rest-client"
