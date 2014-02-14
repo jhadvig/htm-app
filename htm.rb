@@ -38,7 +38,7 @@ class Htm < Sinatra::Base
       RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
       "@api.mailgun.net/v2/htmtrade.sk/messages",
       :from => "#{params['mail'].match(/^[^@]*/i).to_s} <#{params['mail']}>",
-      :to => "j.hadvig@gmail.com",
+      :to => "htmtrade1@gmail.com",
       :subject => "#{params['subject']}",
       :text => "#{params['description']}"
 
@@ -54,7 +54,7 @@ class Htm < Sinatra::Base
       "@api.mailgun.net/v2/htmtrade.sk/messages",
       :from => "#{params['mail'].match(/^[^@]*/i).to_s} <#{params['mail']}>",
       :to => "j.hadvig@gmail.com",
-      :subject => "#{params['subject']}",
+      :subject => "HTMtrade - #{params['subject']}",
       :text => "#{params['description']}"
 
     rescue => e
@@ -68,7 +68,7 @@ class Htm < Sinatra::Base
       RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
       "@api.mailgun.net/v2/htmtrade.sk/messages",
       :from => "#{params['name']} <#{params['mail']}>",
-      :to => "j.hadvig@gmail.com",
+      :to => "htmtrade1@gmail.com",
       :subject => "#{params['subject']}",
       :text =>  "Nazov firmy:#{params['company-name']}"\
                 "Telefon: #{params['phone']}\n" \
