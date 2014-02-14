@@ -181,13 +181,13 @@ hr {
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0));
 }
 
-hr.modal {
+hr.red {
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0));
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(195,28,20,0.4), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(195,28,20,0.4), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(195,28,20,0.4), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(195,28,20,0.4), rgba(0,0,0,0));
 }
 
 #footer {
@@ -226,6 +226,70 @@ hr.modal {
     margin: 25px;
     p.lead.first {
       margin-bottom: 10px;
+    }
+  }
+}
+
+.sw-service {
+  font-size: 18px;
+}
+
+.ipd {
+  .body {
+    margin-left: 35px;
+
+    .first {
+      .lead-header {
+        border-left: 4px solid #c31c14;
+        padding-left: 10px;
+        line-height: 32px;
+      }
+    }
+    .second {
+      .lead-header {
+        border-left: 4px solid #c31c14;
+        padding-left: 10px;
+        line-height: 32px;
+      }
+      margin-top: 40px;
+      .text {
+        font-size:18px;
+        margin:15px;
+        text-align:justify;
+      }
+    }
+    .lead-header {
+      font-size:20px
+    }
+    .three,
+    .four,
+    .five {
+      .header {
+        margin-top: 20px;
+        font-size: 20px;
+        border-left: 4px solid #c31c14;
+        padding-left: 10px;
+        line-height: 32px;
+
+      }
+      .text {
+        margin:15px;
+        margin-top: 10px;
+        text-align:justify;
+        font-size: 18px;      }
+    }
+    .six {
+      .lead-header {
+        border-left: 4px solid #c31c14;
+        padding-left: 10px;
+        line-height: 32px;
+      }
+      .abilities {
+        font-size: 18px;
+      }
+      .advantages {
+        font-size: 18px;
+      }
     }
   }
 }

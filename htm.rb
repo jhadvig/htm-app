@@ -34,7 +34,6 @@ class Htm < Sinatra::Base
   end
 
   post '/submit_mail_representative' do
-    name =
     begin
       RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
       "@api.mailgun.net/v2/htmtrade.sk/messages",
@@ -42,6 +41,38 @@ class Htm < Sinatra::Base
       :to => "j.hadvig@gmail.com",
       :subject => "#{params['subject']}",
       :text => "#{params['description']}"
+
+    rescue => e
+      puts "ERROR: Mail not sent, because of: #{e.message}"
+    end
+    redirect '/contact'
+  end
+
+  post '/submit_info_desk' do
+    begin
+      RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
+      "@api.mailgun.net/v2/htmtrade.sk/messages",
+      :from => "#{params['mail'].match(/^[^@]*/i).to_s} <#{params['mail']}>",
+      :to => "j.hadvig@gmail.com",
+      :subject => "#{params['subject']}",
+      :text => "#{params['description']}"
+
+    rescue => e
+      puts "ERROR: Mail not sent, because of: #{e.message}"
+    end
+    redirect '/contact'
+  end
+
+  post '/submit_mail_air' do
+    begin
+      RestClient.post "https://api:key-6kgjogho9zhv8bjp54ig85gh3cwkz300"\
+      "@api.mailgun.net/v2/htmtrade.sk/messages",
+      :from => "#{params['name']} <#{params['mail']}>",
+      :to => "j.hadvig@gmail.com",
+      :subject => "#{params['subject']}",
+      :text =>  "Nazov firmy:#{params['company-name']}"\
+                "Telefon: #{params['phone']}\n" \
+                "Text: #{params['description']}"
 
     rescue => e
       puts "ERROR: Mail not sent, because of: #{e.message}"
