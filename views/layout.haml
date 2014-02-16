@@ -7,6 +7,7 @@
     %link{:href => "/css/jquery.carousel.fullscreen.css", :rel => "stylesheet"}/
     %link{href: "/css/main.css", rel: "stylesheet"}
     %link{:href => "http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT&subset=latin", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/images/favicon.png", :rel => "icon", :type => "image/png"}
     %script{:src => "/js/jquery-1.10.0.min.js"}
     %script{:src => "/js/bootstrap/js/bootstrap.min.js"}
@@ -56,7 +57,6 @@
           .modal-header
             %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
             %h3#myModalLabel.modal-title Kontaktovať konatela firmy
-            %h3#myModalLabel.modal-title Ing. Ivan Hadvig
           .modal-body
             %form{:role => "form", :action=>"/submit_mail_representative", "method"=>"post"}
               .form-group
@@ -74,7 +74,6 @@
           .modal-header
             %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
             %h3#myModalLabel.modal-title Info-Desk
-            %h3#myModalLabel.modal-title
           .modal-body
             %form{:role => "form", :action=>"/submit_info_desk", "method"=>"post"}
               .form-group
@@ -96,7 +95,7 @@
           .modal-body
             %form{:role => "form", :action=>"/submit_mail_air", :method=>"post"}
               .form-group
-                %input#senderCompanyName.form-control{:placeholder => "Váša spoločnosť", :type => "email", :name => "company-name"}
+                %input#senderCompanyName.form-control{:placeholder => "Váša spoločnosť", :type => "name", :name => "company-name"}
               .form-group
                 %input#senderName.form-control{:placeholder => "Váše meno", :type => "name", :name => "name"}
               .form-group
