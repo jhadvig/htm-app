@@ -23,6 +23,26 @@ jQuery(document).ready(function() {
     	interval: false
 	});
 
+	$(".fancybox").fancybox({
+        'hideOnContentClick': true,
+        'autoScale': true,
+        'height': 'auto',
+        'scrolling': 'no',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'centerOnScroll': true
+	});
+
+	$(".fancybox2").fancybox({
+        'hideOnContentClick': true,
+        'autoScale': true,
+        'height': 'auto',
+        'scrolling': 'no',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'centerOnScroll': true
+	});
+
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()});
 	$('.carousel .item').css({'position': 'fixed', 'width': '100%', 'height': '100%'});
 	$('.carousel-inner div.item img').each(function() {
