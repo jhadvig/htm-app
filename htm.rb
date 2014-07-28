@@ -16,6 +16,10 @@ class Htm < Sinatra::Base
     haml :service
   end
 
+  get '/references' do
+    haml :references
+  end
+
   get '/projects' do
     haml :projects
   end
