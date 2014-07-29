@@ -10,7 +10,7 @@
   margin-top: 50px;
   min-height: 80px;
   height: 80px;
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgba(0,0,0,0.75);
   border: 0px;
 
   .navbar-brand {
@@ -19,8 +19,8 @@
 
   .navbar-collapse {
     margin-top: 10px;
-    font-family: 'Crimson Text', serif;
-    font-size: 17px;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
+    font-size: 14px;
 
     a {
       color: #eee;
@@ -68,7 +68,7 @@
   }
 
   .container.body *{
-    font-family: 'Crimson Text', serif;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
   }
 
   .jumbotron {
@@ -112,7 +112,7 @@
 
     &.address,
     &.ico {
-     font-family: 'Crimson Text', serif;
+     font-family: 'OFL Sorts Mill Goudy TT', serif;
     }
   }
   blockquote {
@@ -123,7 +123,7 @@
 
   .number,
   .mail {
-    font-family: 'Crimson Text', serif;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
   }
   h4 div {
     display: inline-block;
@@ -137,7 +137,7 @@
   width: 100%;
   z-index: 101;
   background-image: url('/images/nav-bar.png');
-  font-family: 'Crimson Text', serif;
+  font-family: 'OFL Sorts Mill Goudy TT', serif;
   color: #ffffff;
   font-size: 14px;
   p {
@@ -150,7 +150,7 @@
   margin: auto;
   * {
     z-index: 500;
-    font-family: 'Crimson Text', serif;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
 
   }
 
@@ -201,13 +201,13 @@ hr.red {
   z-index: 400;
   position: fixed;
   bottom: 0;
-  font-family: 'Crimson Text', serif;
+  font-family: 'OFL Sorts Mill Goudy TT', serif;
 }
 
 .ipd {
   .head {
     blockquote {
-      font-family: 'Crimson Text', serif;
+      font-family: 'OFL Sorts Mill Goudy TT', serif;
       border-left: 4px solid #c31c14;
     }
   }
@@ -222,7 +222,7 @@ hr.red {
 .air_technique {
   .head {
     blockquote {
-      font-family: 'Crimson Text', serif;
+      font-family: 'OFL Sorts Mill Goudy TT', serif;
       border-left: 4px solid #06a2cb;
     }
   }

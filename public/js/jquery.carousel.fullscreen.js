@@ -66,6 +66,10 @@ jQuery(document).ready(function() {
 			$('ul.nav.navbar-nav li.service').addClass("active");
 			$('.progressbar').addClass("blue");
 			break;
+		case 'references':
+			$('ul.nav.navbar-nav li.service').addClass("active");
+			$('.progressbar').addClass("blue");
+			break;
 		case 'contact':
 			$('ul.nav.navbar-nav li.contact').addClass("active");
 			$('.progressbar').addClass("yellow");
