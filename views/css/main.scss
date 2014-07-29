@@ -19,8 +19,8 @@
 
   .navbar-collapse {
     margin-top: 10px;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
-    font-size: 14px;
+    font-family: 'Georgia', cursive; font-style: italic;
+    font-size: 15px;
 
     a {
       color: #eee;
@@ -68,7 +68,7 @@
   }
 
   .container.body *{
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
+    font-family: 'Georgia', cursive; font-style: italic;
   }
 
   .jumbotron {
@@ -112,7 +112,7 @@
 
     &.address,
     &.ico {
-     font-family: 'OFL Sorts Mill Goudy TT', serif;
+     font-family: 'Georgia', cursive; font-style: italic;
     }
   }
   blockquote {
@@ -123,7 +123,7 @@
 
   .number,
   .mail {
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
+    font-family: 'Georgia', cursive; font-style: italic;
   }
   h4 div {
     display: inline-block;
@@ -137,7 +137,7 @@
   width: 100%;
   z-index: 101;
   background-image: url('/images/nav-bar.png');
-  font-family: 'OFL Sorts Mill Goudy TT', serif;
+  font-family: 'Georgia', cursive; font-style: italic;
   color: #ffffff;
   font-size: 14px;
   p {
@@ -150,7 +150,7 @@
   margin: auto;
   * {
     z-index: 500;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
+    font-family: 'Georgia', cursive; font-style: italic;
 
   }
 
@@ -201,13 +201,13 @@ hr.red {
   z-index: 400;
   position: fixed;
   bottom: 0;
-  font-family: 'OFL Sorts Mill Goudy TT', serif;
+  font-family: 'Georgia', cursive; font-style: italic;
 }
 
 .ipd {
   .head {
     blockquote {
-      font-family: 'OFL Sorts Mill Goudy TT', serif;
+      font-family: 'Georgia', cursive; font-style: italic;
       border-left: 4px solid #c31c14;
     }
   }
@@ -222,7 +222,7 @@ hr.red {
 .air_technique {
   .head {
     blockquote {
-      font-family: 'OFL Sorts Mill Goudy TT', serif;
+      font-family: 'Georgia', cursive; font-style: italic;
       border-left: 4px solid #06a2cb;
     }
   }
