@@ -43,6 +43,10 @@
 
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .content {
   position: absolute;
   z-index: 100;
