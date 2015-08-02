@@ -18,6 +18,14 @@ $(window).load(function() {
 });
 
 jQuery(document).ready(function() {
+
+	$('#mp-logo').mouseover(function(){
+		$(this).stop().animate({ top: 0 });
+	});
+	$('#mp-logo').mouseout(function(){
+		$(this).animate({ top: -45 });
+	});
+
 	$('.carousel').carousel({
     	pause: "false",
     	interval: false

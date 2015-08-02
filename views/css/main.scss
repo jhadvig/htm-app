@@ -1,24 +1,43 @@
-#carousel-example-generic.carousel.slide {
-  z-index: 10;
+#mp-logo {
+  position: absolute;
+  right: 15%;
+  z-index: 500;
+  top: -45px;
+  & img#mp {
+    width: 90px;
+  }
 }
 
+@media only screen and (max-width: 1170px) {
+  #mp-logo {
+    z-index: 0;
+  }
+}
+
+li.activity {
+  font-size: 20px;
+}
+
+a.brewery{
+  color: brown;
+}
 
 .navbar.navbar-default.navbar-fixed-top {
   position: absolute;
 
-  z-index: 100 !important;
+  z-index: 300 !important;
   margin-top: 50px;
   min-height: 80px;
   height: 80px;
   background-color: rgba(0,0,0,0.75);
   border: 0px;
+  text-align: center;
 
   .navbar-brand {
     padding: 10px 10px;
   }
 
   .navbar-collapse {
-    margin-top: 10px;
     font-family: 'Georgia', cursive; font-style: italic;
     font-size: 15px;
 
@@ -40,7 +59,6 @@
     color: #eee;
     background-color: transparent;
   }
-
 }
 
 body {
@@ -48,6 +66,7 @@ body {
 }
 
 .content {
+  z-index:100;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -70,8 +89,7 @@ body {
       background-color: #ebb035;
     }
   }
-
-  .container.body *{
+  .container.body * {
     font-family: 'Georgia', cursive; font-style: italic;
   }
 
@@ -147,6 +165,31 @@ body {
   p {
     margin: 0;
 
+  }
+}
+
+
+
+@media only screen and (max-width: 1170px) {
+  .navbar.navbar-default.navbar-fixed-top {
+    margin-top: 0px;
+
+  }
+  .content {
+    top:80px;
+  }
+  .footer {
+
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navbar.navbar-default.navbar-fixed-top .navbar-collapse.pull-right.in {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 40%;
+    & a {
+      margin: 15px 0px;
+    }
   }
 }
 
